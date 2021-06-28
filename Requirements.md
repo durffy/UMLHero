@@ -10,9 +10,10 @@ They system must ( VERB NOUN )
 
 - CRUD Use Cases/User Stories
 
-- CRUD Domain Models
-- - Identify Nouns 
+- CRUD Domain Models. CRC Cards?
+- - Identify Classes in NOUNS
 - - CRUD Class Relationships
+- - Identify Responsibilities in VERBS
 
 - CRUD Class Diagrams
 
