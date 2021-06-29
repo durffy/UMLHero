@@ -2,21 +2,27 @@
 
 This requirements document is a draft of the requirements for the project. Requirements will be organized by: Functional, Non-Functional
 
-# Functional Requirements
-*What* must it do?
+# FUNCTIONAL REQUIREMENTS
+WHAT must the system do? (verb noun)(eg notify user, read file, track changes, etc)
 
-They system must ( VERB NOUN ) 
+- CRUD Projects
+
+## requirements
 - CRUD Requirements
+- - categorize requirements
 
-- CRUD Use Cases/User Stories
+## Use Cases and User Stories
+- CRUD Use Cases
+- - Identify Actors
+- - Identify Senarios
+- diagram Use Cases
+- CRUD User Stories
 
+## Domain Models
 - CRUD Domain Models. CRC Cards?
 - - Identify Classes in NOUNS
 - - CRUD Class Relationships
 - - Identify Responsibilities in VERBS
 
+## class diagrams
 - CRUD Class Diagrams
-
-# Non-Functional Requirements
-*How* should it do it?
-
