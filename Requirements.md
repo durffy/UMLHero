@@ -26,3 +26,6 @@ WHAT must the system do? (verb noun)(eg notify user, read file, track changes, e
 
 ## class diagrams
 - CRUD Class Diagrams
+- - CRUD Classes
+- - CRUD Attributes of Classes
+- - CRUD Behaviors of classes (E.G. Responsibilites)
