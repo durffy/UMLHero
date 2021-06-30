@@ -23,12 +23,16 @@ Senario: The designer deletes the project from the projects overview, is prompte
 
 ## title: Create Requirements
 Actor: Designer
-Senario: The designer adds a new requirement within the project sidebar
+Senario: The designer adds a new requirement within the project under the requirements section
 
 ## title: Read Requirements
 Actor: Designer
-Senario: the designer reviews the requirements within the requirements section of the project sidebar
+Senario: the designer reviews the requirements within the requirements section of the project
 
 ## title: Update Requirements
 Actor: Designer
-Senario: the designer reviews the requirements within the requirements section of the project sidebar, the specific requirement that needs to be updated is modified and saved
+Senario: the designer reviews the requirements within the requirements section of the project, the specific requirement that needs to be updated is modified and saved
+
+## title: Delete Requirements
+Actor: Designer
+Senario: the designer reviews the requirements within the requirements section of the project, the specfic requirement is deleted from the requirements section
