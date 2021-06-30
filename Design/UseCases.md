@@ -28,3 +28,7 @@ Senario: The designer adds a new requirement within the project sidebar
 ## title: Read Requirements
 Actor: Designer
 Senario: the designer reviews the requirements within the requirements section of the project sidebar
+
+## title: Update Requirements
+Actor: Designer
+Senario: the designer reviews the requirements within the requirements section of the project sidebar, the specific requirement that needs to be updated is modified and saved
