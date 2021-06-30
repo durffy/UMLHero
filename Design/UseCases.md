@@ -5,13 +5,13 @@ Senario:
 
 ## title: Create Project
 Actor: Designer
-Senario: The Designer selects projects, selects create new project, and adds a name, they are taken to the new project and can C.R.U.D Requirements, Use Cases, User Stories, Domain Models, and Class Diagrams
+Senario: The Designer creates a new project and is taken to a new project page to C.R.U.D the requirements, Usecases, User Stories, Domain Models, and class diagrams
 
 ## title: Read Project
 Actor: Designer/Software Developer
-Senario: The Designer selects projects, selects the recent project from the list of projects; they are taken to the project and can C.R.U.D Requirements, Use Cases, User Stories, Domain Models, and Class Diagrams
+Senario: the designer opens a recent project and is taken to the project page to C.R.U.D the requirements, Usecases, User Stories, Domain Models, and class diagrams
 
 ## title: Delete Project
 Actor: Designer
-Senario: The designer selects projects, selects the elipsies (...) on the project, and selects delete. They are prompted to delete the project, they select delete and the project is deleted
+Senario: The designer deletes the project from the projects overview, is prompted to verify the deletion and deletes the project
 
