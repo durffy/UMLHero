@@ -20,6 +20,9 @@ Senario: the designer opens up a recent project ot modify and is taken to the pr
 Actor: Designer
 Senario: The designer deletes the project from the projects overview, is prompted to verify the deletion and deletes the project
 
+## title: View Requirements List
+Actor: Designer
+Senario: the designer views the list of requirements in a list format to get an overview of the current requirements
 
 ## title: Create Requirements
 Actor: Designer
