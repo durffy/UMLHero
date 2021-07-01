@@ -20,6 +20,9 @@ Senario: the designer opens up a recent project ot modify and is taken to the pr
 Actor: Designer
 Senario: The designer deletes the project from the projects overview, is prompted to verify the deletion and deletes the project
 
+## title: Search Requirements
+Actor: Designer
+Senario: The designer needs to review a specfic requirement related to billing. The designer goes to the requirement list and searches billing and pulls up all the related requirements for further review 
 
 ## title: Create Requirements
 Actor: Designer
