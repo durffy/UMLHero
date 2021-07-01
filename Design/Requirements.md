@@ -10,7 +10,9 @@ WHAT must the system do? (verb noun)(eg notify user, read file, track changes, e
 ## requirements
 rationale: requirements are to be tracked by the system to provide a good reference for the Designer, Software Developer, or Project Manager
 criteria:
-- Manage multiple requirements
+- View multiple requirements
+- search requirements
+- Mark requirement as resolved
 - Create a requirement
 - Read a requirement
 - Update a requirement
