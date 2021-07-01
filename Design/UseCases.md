@@ -36,3 +36,7 @@ Senario: the designer reviews the requirements within the requirements section o
 ## title: Delete Requirements
 Actor: Designer
 Senario: the designer reviews the requirements within the requirements section of the project, the specfic requirement is deleted from the requirements section
+
+## Title: Categorize Requirements
+Actor: Designer
+Senario: the designer reviews a requirement and categorizes it as a Functional, Non-Functional, Constraint
