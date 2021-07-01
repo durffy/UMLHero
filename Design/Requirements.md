@@ -8,8 +8,14 @@ WHAT must the system do? (verb noun)(eg notify user, read file, track changes, e
 - CRUD Projects
 
 ## requirements
-- CRUD Requirements
-- - categorize requirements
+rationale: requirements are to be tracked by the system to provide a good reference for the Designer, Software Developer, or Project Manager
+criteria:
+- Manage multiple requirements
+- Create a requirement
+- Read a requirement
+- Update a requirement
+- Delete a Requirement
+- Categorize as Functional, Non-Functional, Constraint
 
 ## Use Cases and User Stories
 - CRUD Use Cases
