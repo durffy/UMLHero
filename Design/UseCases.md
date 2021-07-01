@@ -7,6 +7,10 @@ Senario:
 Actor: Designer
 Senario: The designer reviews the list of projects that are open in the project list
 
+## title: Search Projects
+Actor: Designer
+Senario: The designer is having issues finding a project, they go to the project list and search the project title to find the project they are looking for.
+
 ## title: Create Project
 Actor: Designer
 Senario: The Designer creates a new project and is taken to a new project page to C.R.U.D the requirements, Usecases, User Stories, Domain Models, and class diagrams
