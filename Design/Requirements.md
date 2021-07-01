@@ -5,6 +5,7 @@ This requirements document is a draft of the requirements for the project. Requi
 # FUNCTIONAL REQUIREMENTS
 WHAT must the system do? (verb noun)(eg notify user, read file, track changes, etc)
 
+## Projects
 - CRUD Projects
 
 ## requirements
