@@ -6,6 +6,8 @@ This requirements document is a draft of the requirements for the project. Requi
 WHAT must the system do? (verb noun)(eg notify user, read file, track changes, etc)
 
 ## Projects
+rationale: projects will encompase an entire scope of a project to provide a way to organize multiple projects
+criteria:
 - View multiple Projects
 - Search Projects
 - Create a Project
@@ -14,7 +16,7 @@ WHAT must the system do? (verb noun)(eg notify user, read file, track changes, e
 - Delete a Project
 
 ## requirements
-rationale: requirements are to be tracked by the system to provide a good reference for the Designer, Software Developer, or Project Manager
+rationale: requirements are to be tracked by the system to provide a reference for the Designer, Software Developer, or Project Manager
 criteria:
 - View multiple requirements
 - search requirements
