@@ -3,6 +3,10 @@ title:
 Actor: 
 Senario: 
 
+## title: View Project List
+Actor: Designer
+Senario: The designer reviews the list of projects that are open in the project list
+
 ## title: Create Project
 Actor: Designer
 Senario: The Designer creates a new project and is taken to a new project page to C.R.U.D the requirements, Usecases, User Stories, Domain Models, and class diagrams
