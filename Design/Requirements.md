@@ -29,9 +29,10 @@ criteria:
 
 ## Use Cases and User Stories
 - CRUD Use Cases
-- - Identify Actors
-- - Identify Senarios
-- diagram Use Cases
+- add multiple Actors too a use case
+- add multiple Senarios to a use case 
+- add relationships between actors and senarios. i.e. project manger and a software developer may both view a project as part of their use case
+- diagram Use Cases linking the Actor to the title of a use case
 - CRUD User Stories
 
 ## Domain Models
