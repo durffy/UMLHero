@@ -6,7 +6,12 @@ This requirements document is a draft of the requirements for the project. Requi
 WHAT must the system do? (verb noun)(eg notify user, read file, track changes, etc)
 
 ## Projects
-- CRUD Projects
+- View multiple Projects
+- Search Projects
+- Create a Project
+- Read a Project: View the projects requirements, usecases, user stories, domain modles, class diagrams.
+- Update a Project. Change projects attributes: Name, Author, etc...
+- Delete a Project
 
 ## requirements
 rationale: requirements are to be tracked by the system to provide a good reference for the Designer, Software Developer, or Project Manager
