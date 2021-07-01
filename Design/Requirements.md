@@ -36,7 +36,7 @@ criteria:
 - CRUD User Stories
 
 ## Domain Models
-- CRUD Domain Models. CRC Cards?
+- CRUD Domain Models
 - - Identify Classes in NOUNS
 - - CRUD Class Relationships
 - - Identify Responsibilities in VERBS
@@ -45,4 +45,4 @@ criteria:
 - CRUD Class Diagrams
 - - CRUD Classes
 - - CRUD Attributes of Classes
-- - CRUD Behaviors of classes (E.G. Responsibilites)
+- - CRUD Behaviors of classes (E.G. Domain Model Responsibilites)
