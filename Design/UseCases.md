@@ -84,3 +84,7 @@ Senario: the Designer notices an issue with the senario of a usecase, they make 
 ## title: Delete Usecase
 Actor: Designer
 Senario: The desinger decides that a usecase has become irrelevant. They navigate to the usecase list and delete it from the list.
+
+## title: Search Usecase List
+Actor: Software developer
+Senario: The software developer needs to find all the usecases realted to billing. They navigate to the usecase list and search the billing to bring up the related usecases for billing
