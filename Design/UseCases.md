@@ -70,3 +70,7 @@ Senario: the designer adds a new use case within the usecase section of the proj
 ## title: Read Usecase
 Actor: Designer
 Senario: the designer would like to review a use case, they go to the use case section of the project and look at the current use cases
+
+## title: Update Usecase
+Actor: Designer
+Senario: the Designer notices an issue with the senario of a usecase, they make the correction to the usecase and save it
