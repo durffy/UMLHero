@@ -60,3 +60,8 @@ Senario: the designer reviews the requirements within the requirements section o
 ## Title: Categorize Requirements
 Actor: Designer
 Senario: the designer reviews a requirement and categorizes it as a Functional, Non-Functional, Constraint
+
+
+# title: Create Usecase
+Actor: Designer
+Senario: the designer adds a new use case within the usecase section of the project
