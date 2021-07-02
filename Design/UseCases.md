@@ -88,3 +88,7 @@ Senario: The desinger decides that a usecase has become irrelevant. They navigat
 ## title: Search Usecase List
 Actor: Software developer
 Senario: The software developer needs to find all the usecases realted to billing. They navigate to the usecase list and search the billing to bring up the related usecases for billing
+
+## title: Add Multiple Actors to Usecase
+Actor: Designer
+Senario: the designer notices that a specific usecase is relevant to both and admin and a user. They add both the admin and the user to the actors of the usecase.
