@@ -80,3 +80,7 @@ Senario: the designer would like to review a use case, they go to the use case s
 ## title: Update Usecase
 Actor: Designer
 Senario: the Designer notices an issue with the senario of a usecase, they make the correction to the usecase and save it
+
+## title: Delete Usecase
+Actor: Designer
+Senario: The desinger decides that a usecase has become irrelevant. They navigate to the usecase list and delete it from the list.
