@@ -37,6 +37,10 @@ Senario: the designer views the list of requirements in a list format to get an 
 Actor: Designer
 Senario: The designer needs to review a specfic requirement related to billing. The designer goes to the requirement list and searches billing and pulls up all the related requirements for further review 
 
+## title: Mark Requirement Resolved
+Actor: Software Developer
+Senario: the Software Developer finishes the requirement in code and tests the requirement. The requirement passes the test and they mark the requirement as resovled
+
 ## title: Create Requirements
 Actor: Designer
 Senario: The designer adds a new requirement within the project under the requirements section
