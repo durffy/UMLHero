@@ -3,6 +3,9 @@ title:
 Actor: 
 Senario: 
 
+
+# PROJECT
+
 ## title: View Project List
 Actor: Designer
 Senario: The designer reviews the list of projects that are open in the project list
@@ -29,6 +32,8 @@ Actor: Designer
 Senario: The designer deletes the project from the projects overview, is prompted to verify the deletion and deletes the project
 
 
+# REQUIREMENTS
+
 ## title: View Requirements List
 Actor: Designer
 Senario: the designer views the list of requirements in a list format to get an overview of the current requirements
@@ -36,6 +41,10 @@ Senario: the designer views the list of requirements in a list format to get an 
 ## title: Search Requirements
 Actor: Designer
 Senario: The designer needs to review a specfic requirement related to billing. The designer goes to the requirement list and searches billing and pulls up all the related requirements for further review 
+
+## title: Mark Requirement Resolved
+Actor: Software Developer
+Senario: the Software Developer finishes the requirement in code and tests the requirement. The requirement passes the test and they mark the requirement as resovled
 
 ## title: Create Requirements
 Actor: Designer
@@ -56,3 +65,30 @@ Senario: the designer reviews the requirements within the requirements section o
 ## Title: Categorize Requirements
 Actor: Designer
 Senario: the designer reviews a requirement and categorizes it as a Functional, Non-Functional, Constraint
+
+
+# USECASES
+
+## title: Create Usecase
+Actor: Designer
+Senario: the designer adds a new use case within the usecase section of the project
+
+## title: Read Usecase
+Actor: Designer
+Senario: the designer would like to review a use case, they go to the use case section of the project and look at the current use cases
+
+## title: Update Usecase
+Actor: Designer
+Senario: the Designer notices an issue with the senario of a usecase, they make the correction to the usecase and save it
+
+## title: Delete Usecase
+Actor: Designer
+Senario: The desinger decides that a usecase has become irrelevant. They navigate to the usecase list and delete it from the list.
+
+## title: Search Usecase List
+Actor: Software developer
+Senario: The software developer needs to find all the usecases realted to billing. They navigate to the usecase list and search the billing to bring up the related usecases for billing
+
+## title: Add Multiple Actors to Usecase
+Actor: Designer
+Senario: the designer notices that a specific usecase is relevant to both and admin and a user. They add both the admin and the user to the actors of the usecase.
