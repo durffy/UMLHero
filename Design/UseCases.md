@@ -3,6 +3,9 @@ title:
 Actor: 
 Senario: 
 
+
+# PROJECT
+
 ## title: View Project List
 Actor: Designer
 Senario: The designer reviews the list of projects that are open in the project list
@@ -28,6 +31,8 @@ Senario: the designer opens up a recent project ot modify and is taken to the pr
 Actor: Designer
 Senario: The designer deletes the project from the projects overview, is prompted to verify the deletion and deletes the project
 
+
+# REQUIREMENTS
 
 ## title: View Requirements List
 Actor: Designer
@@ -61,7 +66,8 @@ Senario: the designer reviews the requirements within the requirements section o
 Actor: Designer
 Senario: the designer reviews a requirement and categorizes it as a Functional, Non-Functional, Constraint
 
-# Use Cases
+
+# USECASES
 
 ## title: Create Usecase
 Actor: Designer
