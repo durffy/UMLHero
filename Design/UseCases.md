@@ -92,3 +92,9 @@ Senario: The software developer needs to find all the usecases realted to billin
 ## title: Add Multiple Actors to Usecase
 Actor: Designer
 Senario: the designer notices that a specific usecase is relevant to both and admin and a user. They add both the admin and the user to the actors of the usecase.
+
+# User Stories
+
+## Title: Create user stories
+Actor: Designer
+Senario: the designer adds a new user story within the user story section of the project. they provide a "User", a "Goal" and a "Reason" to complete the user story
