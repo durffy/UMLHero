@@ -104,10 +104,14 @@ Senario: the designer adds a new user story within the user story section of the
 Actor: Designer
 Senario: The designer wants to review the user stories, they navigate to the user story section of the project and view the list of user stories
 
-# Title: Update User Stories
+## Title: Update User Stories
 Actor: Designer
 Senario: the designer needs to modify a user story, they navigate to the use story and edit it.
 
-# Title: Delete User Stories
+## Title: Delete User Stories
 Actor: Designer
 Senaroi: The designer has verified that a user story has become irrelevant, they delete the user story from the user story section of the project
+
+## Title: Search User Stories
+Actor: Designer
+Senario: the designer is unable to find the correct user story referencing "billing" from the list. They search for "billing" in the User Story section to narrow down the list.
