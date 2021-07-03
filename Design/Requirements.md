@@ -32,6 +32,7 @@ criteria:
 - search usecase list
 - add multiple Actors too a use case
 - CRUD User Stories
+- search user stories
 
 ## Domain Models
 - CRUD Domain Models
