@@ -110,7 +110,7 @@ Senario: the designer needs to modify a user story, they navigate to the use sto
 
 ## Title: Delete User Stories
 Actor: Designer
-Senaroi: The designer has verified that a user story has become irrelevant, they delete the user story from the user story section of the project
+Senario: The designer has verified that a user story has become irrelevant, they delete the user story from the user story section of the project
 
 ## Title: Search User Stories
 Actor: Designer
