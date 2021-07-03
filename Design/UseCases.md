@@ -107,3 +107,7 @@ Senario: The designer wants to review the user stories, they navigate to the use
 # Title: Update User Stories
 Actor: Designer
 Senario: the designer needs to modify a user story, they navigate to the use story and edit it.
+
+# Title: Delete User Stories
+Actor: Designer
+Senaroi: The designer has verified that a user story has become irrelevant, they delete the user story from the user story section of the project
