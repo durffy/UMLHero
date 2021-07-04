@@ -125,3 +125,8 @@ Senario: The designer identifies from the list of nouns in user stories possible
 ## Title: Read Domain Model
 Actor: Designer
 Senario: The designer wants to review the domain model, they navigate to the Domain Model section of the project and view the list of drafted objects
+
+## Title: Update Domain Model
+Actor: Designer
+Senario: a correction is needed for an object in the domain model. The designer edits the object name and responsibilities list and saves the changes
+
