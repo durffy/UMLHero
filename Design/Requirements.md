@@ -37,7 +37,7 @@ criteria:
 ## Domain Models
 - CRUD Domain Models
 - - Identify Classes/Objects in NOUNS
-- - CRUD Class Relationships
+- - Identify Class Relationships
 - - Identify Responsibilities in VERBS
 
 ## class diagrams
