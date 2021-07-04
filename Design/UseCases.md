@@ -115,3 +115,9 @@ Senario: The designer has verified that a user story has become irrelevant, they
 ## Title: Search User Stories
 Actor: Designer
 Senario: the designer is unable to find the correct user story referencing "billing" from the list. They search for "billing" in the User Story section to narrow down the list.
+
+# Domain Models
+
+## Title: Create Domain Model
+Actor: Designer
+Senario: The designer identifies from the list of nouns in user stories possible objects. The objects are then selected for import into the domain model
