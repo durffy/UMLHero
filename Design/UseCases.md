@@ -130,3 +130,7 @@ Senario: The designer wants to review the domain model, they navigate to the Dom
 Actor: Designer
 Senario: a correction is needed for an object in the domain model. The designer edits the object name and responsibilities list and saves the changes
 
+## Title: Delete Domain Model
+Actor: Designer
+Senario: An object in the domain model is no longer applicable to the project, the object is delete from the domain model
+
