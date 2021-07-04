@@ -115,3 +115,25 @@ Senario: The designer has verified that a user story has become irrelevant, they
 ## Title: Search User Stories
 Actor: Designer
 Senario: the designer is unable to find the correct user story referencing "billing" from the list. They search for "billing" in the User Story section to narrow down the list.
+
+# Domain Models
+
+## Title: Create Domain Model
+Actor: Designer
+Senario: the designer adds a new object within the Domain Model section of the project. A noun and a responsibility is added to the object
+
+## Title: Read Domain Model
+Actor: Designer
+Senario: The designer wants to review the domain model, they navigate to the Domain Model section of the project and view the list of drafted objects
+
+## Title: Update Domain Model
+Actor: Designer
+Senario: a correction is needed for an object in the domain model. The designer edits the object name and responsibilities list and saves the changes
+
+## Title: Delete Domain Model
+Actor: Designer
+Senario: An object in the domain model is no longer applicable to the project, the object is delete from the domain model
+
+## Title: Identify Objects
+Actor: Designer
+Senario: The designer identifies from the list of nouns in user stories possible objects. The objects are then selected for import into the domain model
