@@ -121,3 +121,7 @@ Senario: the designer is unable to find the correct user story referencing "bill
 ## Title: Create Domain Model
 Actor: Designer
 Senario: The designer identifies from the list of nouns in user stories possible objects. The objects are then selected for import into the domain model
+
+## Title: Read Domain Model
+Actor: Designer
+Senario: The designer wants to review the domain model, they navigate to the Domain Model section of the project and view the list of drafted objects
