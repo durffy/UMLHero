@@ -179,3 +179,7 @@ Senario:
 ## Title: Delete Attributes
 Actor: Designer
 Senario: An attribute is no longer needed for a class, the attribute is deleted from the class
+
+## Title: Create Behaviors
+Actor: Designer
+Senario: Class behaviors need to be added to a class. Navigate to the class and add the behavior name, the behavior type, and the behavior, public and private type and save
