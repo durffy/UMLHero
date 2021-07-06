@@ -142,3 +142,6 @@ Senario: The designer identifies from the list of nouns in user stories possible
 Actor: Designer
 Senario: the designer links object relationships together within the domain model
 
+## Title: Identify Responsibilities
+Actor: Designer
+Senaroi: the designer identifies from a list of verbs on Usecases and User Stories the responsibilites for each object
