@@ -161,3 +161,8 @@ Senario: the software developer needs to review the attributes for a class. They
 ## Title: Update Class Diagram
 Actor: Designer/Software developer
 Senario: The class diagram has a mistake in attributes and behaviors. The class is selected and the attributes and behaviors are modified and saved
+
+
+## Title: Delete Class Diagram
+Actor: Designer
+Senario: A class has become obsolete in a project. The designer deletes the class from the class diagram
