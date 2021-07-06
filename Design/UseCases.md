@@ -116,6 +116,7 @@ Senario: The designer has verified that a user story has become irrelevant, they
 Actor: Designer
 Senario: the designer is unable to find the correct user story referencing "billing" from the list. They search for "billing" in the User Story section to narrow down the list.
 
+
 # Domain Models
 
 ## Title: Create Domain Model
@@ -144,4 +145,11 @@ Senario: the designer links object relationships together within the domain mode
 
 ## Title: Identify Responsibilities
 Actor: Designer
-Senaroi: the designer identifies from a list of verbs on Usecases and User Stories the responsibilites for each object
+Senario: the designer identifies from a list of verbs on Usecases and User Stories the responsibilites for each object
+
+
+# Class Diagrams
+
+## Title: Create Class Diagram
+Actor: Designer
+Senario: The designer navigates to the class diagram section of the project and adds the Objects identified in the domain model. Attributes and Behaviors are also added to the class diagram.
