@@ -137,3 +137,8 @@ Senario: An object in the domain model is no longer applicable to the project, t
 ## Title: Identify Objects
 Actor: Designer
 Senario: The designer identifies from the list of nouns in user stories possible objects. The objects are then selected for import into the domain model
+
+## Title: Identify Relationships
+Actor: Designer
+Senario: the designer links object relationships together within the domain model
+
