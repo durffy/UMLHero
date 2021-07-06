@@ -175,4 +175,7 @@ Actor: Designer
 Senario: 
 - The wrong type for a class attribute was used. Navigate to the class and modify they attributes type and save
 - A class attribute needs to be marked as private. Navigate to the class and modify the attribute to be marked private
-- The class name needs to be modified to a more descriptive name. Navigate to the class and modify the name of the class
+
+## Title: Delete Attributes
+Actor: Designer
+Senario: An attribute is no longer needed for a class, the attribute is deleted from the class
