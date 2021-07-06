@@ -169,3 +169,10 @@ Senario: A class has become obsolete in a project. The designer deletes the clas
 ## Title: Create Attributes
 Actor: Designer
 Senario: Class Attributes need to be added to a class. Navigate to the class and add the attribute to the attributes, mark it as public or private, add a type and save
+
+## Title: Update Attributes
+Actor: Designer
+Senario: 
+- The wrong type for a class attribute was used. Navigate to the class and modify they attributes type and save
+- A class attribute needs to be marked as private. Navigate to the class and modify the attribute to be marked private
+- The class name needs to be modified to a more descriptive name. Navigate to the class and modify the name of the class
