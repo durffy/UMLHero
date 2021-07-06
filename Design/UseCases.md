@@ -157,3 +157,7 @@ Senario: The designer navigates to the class diagram section of the project and 
 ## Title: Read Class Diagram
 Actor: Software Developer
 Senario: the software developer needs to review the attributes for a class. They navigate to the class diagram section and check for the class. They review the class attributes.
+
+## Title: Update Class Diagram
+Actor: Designer/Software developer
+Senario: The class diagram has a mistake in attributes and behaviors. The class is selected and the attributes and behaviors are modified and saved
