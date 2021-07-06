@@ -153,3 +153,7 @@ Senario: the designer identifies from a list of verbs on Usecases and User Stori
 ## Title: Create Class Diagram
 Actor: Designer
 Senario: The designer navigates to the class diagram section of the project and adds the Objects identified in the domain model. Attributes and Behaviors are also added to the class diagram.
+
+## Title: Read Class Diagram
+Actor: Software Developer
+Senario: the software developer needs to review the attributes for a class. They navigate to the class diagram section and check for the class. They review the class attributes.
