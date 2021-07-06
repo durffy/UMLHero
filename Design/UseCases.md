@@ -161,3 +161,25 @@ Senario: the software developer needs to review the attributes for a class. They
 ## Title: Update Class Diagram
 Actor: Designer/Software developer
 Senario: The class diagram has a mistake in attributes and behaviors. The class is selected and the attributes and behaviors are modified and saved
+
+## Title: Delete Class Diagram
+Actor: Designer
+Senario: A class has become obsolete in a project. The designer deletes the class from the class diagram
+
+## Title: Create Attributes
+Actor: Designer
+Senario: Class Attributes need to be added to a class. Navigate to the class and add the attribute to the attributes, mark it as public or private, add a type and save
+
+## Title: Update Attributes
+Actor: Designer
+Senario: 
+- The wrong type for a class attribute was used. Navigate to the class and modify they attributes type and save
+- A class attribute needs to be marked as private. Navigate to the class and modify the attribute to be marked private
+
+## Title: Delete Attributes
+Actor: Designer
+Senario: An attribute is no longer needed for a class, the attribute is deleted from the class
+
+## Title: Create Behaviors
+Actor: Designer
+Senario: Class behaviors need to be added to a class. Navigate to the class and add the behavior name, the behavior type, and the behavior, public and private type and save
