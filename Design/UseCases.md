@@ -183,3 +183,8 @@ Senario: An attribute is no longer needed for a class, the attribute is deleted 
 ## Title: Create Behaviors
 Actor: Designer
 Senario: Class behaviors need to be added to a class. Navigate to the class and add the behavior name, the behavior type, and the behavior, public and private type and save
+
+## Title: Read Behaviors
+Actor: Designer
+Senario: The behaviors of a class need to be reviewed. navigate to the class and review the behaviors listed for that class
+
