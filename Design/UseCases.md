@@ -194,3 +194,7 @@ Senario:
 - The type of behavior needs to be changed. Navigate to the class and change the type(i.e. int, string, array, etc)
 - The public/private flag needs to be changed for a behavior. Navigate to the class and change the private/public flag
 - the name of a behavior needs to be modified to describe the behavior better. Navigate to the class and change the name of the class
+
+## Title: Delete Behaviors
+Actor: Designer
+Senario: A behavior is no longer needed for a class. Navigate to the classs and remove the behavior
