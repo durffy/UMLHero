@@ -18,6 +18,10 @@ AS a: Designer
 I want: Create Projects
 so that: I can track a new projects progress
 
+AS a: Designer
+I want: Read Projects
+so that: I can view the current progress on a project
+
 
 # Requirements
 
