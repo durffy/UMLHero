@@ -22,6 +22,9 @@ AS a: Designer
 I want: Read Projects
 so that: I can view the current progress on a project
 
+AS a: Designer
+I want: Update Projects
+so that: I can make corrections or changes to a project
 
 # Requirements
 
