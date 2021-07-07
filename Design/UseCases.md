@@ -188,3 +188,9 @@ Senario: Class behaviors need to be added to a class. Navigate to the class and 
 Actor: Designer
 Senario: The behaviors of a class need to be reviewed. navigate to the class and review the behaviors listed for that class
 
+## Title: Update Behaviors
+Actor: Designer
+Senario: 
+- The type of behavior needs to be changed. Navigate to the class and change the type(i.e. int, string, array, etc)
+- The public/private flag needs to be changed for a behavior. Navigate to the class and change the private/public flag
+- the name of a behavior needs to be modified to describe the behavior better. Navigate to the class and change the name of the class
