@@ -14,6 +14,10 @@ AS a: Designer
 I want: Search projects
 so that: I can narrow down the correct project for a client
 
+AS a: Designer
+I want: Create Projects
+so that: I can track a new projects progress
+
 
 # Requirements
 
