@@ -10,6 +10,10 @@ AS a: Designer
 I want: View Multiple Projects
 so that: I can manage multiple projects
 
+AS a: Designer
+I want: Search projects
+so that: I can narrow down the correct project for a client
+
 
 # Requirements
 
