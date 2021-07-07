@@ -26,6 +26,10 @@ AS a: Designer
 I want: Update Projects
 so that: I can make corrections or changes to a project
 
+AS a: Designer
+I want: Delete Projects
+so that: I can clean up stale projects
+
 # Requirements
 
 AS a: Designer
