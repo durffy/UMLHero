@@ -33,5 +33,13 @@ so that: I can clean up stale projects
 # Requirements
 
 AS a: Designer
-I want: to add requirements 
+I want: Create requirements 
 so that: requirements can be tracked for a project
+
+AS a: Designer
+I want: Read requirements
+so that: I can view the current requirements
+
+AS a: Designer
+I want: Update requirements
+so that: I can make changes to incorrect information
