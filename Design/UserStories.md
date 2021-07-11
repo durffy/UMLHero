@@ -33,6 +33,14 @@ so that: I can clean up stale projects
 # Requirements
 
 AS a: Designer
+I want: View Requirements List
+so that: I can see the current requirements for a project and see their completion status
+
+AS a: Designer
+I want: Search Requirements List
+so that: I can narrow down specific requirements for a project
+
+AS a: Designer
 I want: Create requirements 
 so that: requirements can be tracked for a project
 
@@ -43,3 +51,7 @@ so that: I can view the current requirements
 AS a: Designer
 I want: Update requirements
 so that: I can make changes to incorrect information
+
+AS a: Designer
+I want: Delete requirements
+so that: I can remove unecessary information from the requirements
