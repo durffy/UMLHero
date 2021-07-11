@@ -37,6 +37,10 @@ I want: View Requirements List
 so that: I can see the current requirements for a project and see their completion status
 
 AS a: Designer
+I want: Search Requirements List
+so that: I can narrow down specific requirements for a project
+
+AS a: Designer
 I want: Create requirements 
 so that: requirements can be tracked for a project
 
