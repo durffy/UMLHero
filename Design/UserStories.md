@@ -41,6 +41,10 @@ I want: Search Requirements List
 so that: I can narrow down specific requirements for a project
 
 AS a: Designer
+I want: Mark a requirement as resolved
+so that: I can track the progress on requirements
+
+AS a: Designer
 I want: Create requirements 
 so that: requirements can be tracked for a project
 
@@ -55,3 +59,7 @@ so that: I can make changes to incorrect information
 AS a: Designer
 I want: Delete requirements
 so that: I can remove unecessary information from the requirements
+
+AS a: Designer
+I want: Categorize requirements
+so that: I identify it later based on Functional, Non-Functional, Constraint requirements
