@@ -59,3 +59,7 @@ so that: I can make changes to incorrect information
 AS a: Designer
 I want: Delete requirements
 so that: I can remove unecessary information from the requirements
+
+AS a: Designer
+I want: Categorize requirements
+so that: I identify it later based on Functional, Non-Functional, Constraint requirements
