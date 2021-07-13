@@ -41,6 +41,10 @@ I want: Search Requirements List
 so that: I can narrow down specific requirements for a project
 
 AS a: Designer
+I want: Mark a requirement as resolved
+so that: I can track the progress on requirements
+
+AS a: Designer
 I want: Create requirements 
 so that: requirements can be tracked for a project
 
