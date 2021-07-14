@@ -74,3 +74,7 @@ AS a: Designer
 I want: Read Usecases
 so that: I can review senarios for possible objects for a project
 
+AS a: Designer
+I want: Update Usecases
+so that: I can make corrections to senarios within a project
+
