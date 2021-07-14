@@ -78,3 +78,6 @@ AS a: Designer
 I want: Update Usecases
 so that: I can make corrections to senarios within a project
 
+AS a: Designer
+I want: Delete Usecases
+so that: I can remove irrelevant usecases from a project
