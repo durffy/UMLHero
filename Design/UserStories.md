@@ -64,28 +64,24 @@ AS a: Designer
 I want: Categorize requirements
 so that: I identify it later based on Functional, Non-Functional, Constraint requirements
 
-# Use Cases and User Stories
+# User Stories
 
 AS a: Designer
-I want: Create Usecases
+I want: Create User Stories
 so that: I can track senarios for possible objects within a project
 
 AS a: Designer
-I want: Read Usecases
+I want: Read User Stories
 so that: I can review senarios for possible objects for a project
 
 AS a: Designer
-I want: Update Usecases
+I want: Update User Stories
 so that: I can make corrections to senarios within a project
 
 AS a: Designer
-I want: Delete Usecases
-so that: I can remove irrelevant usecases from a project
+I want: Delete User Stories
+so that: I can remove irrelevant User Stories from a project
 
 AS a: Designer
-I want: Search Usecases
+I want: Search User Stories
 so that: I can find a specific usecase that I am looking for within a project
-
-AS a: Designer
-I want: Add Multiple Actors to Usecases
-so that: I can track multiple different actors that may use a usecase

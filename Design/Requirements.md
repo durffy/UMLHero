@@ -28,9 +28,6 @@ criteria:
 - Categorize as Functional, Non-Functional, Constraint
 
 ## Use Cases and User Stories
-- CRUD Use Cases
-- search usecase list
-- add multiple Actors too a use case
 - CRUD User Stories
 - search user stories
 
