@@ -63,3 +63,29 @@ so that: I can remove unecessary information from the requirements
 AS a: Designer
 I want: Categorize requirements
 so that: I identify it later based on Functional, Non-Functional, Constraint requirements
+
+# User Stories
+
+AS a: Designer
+I want: Create User Stories
+so that: I can track senarios for possible objects within a project
+
+AS a: Designer
+I want: Read User Stories
+so that: I can review senarios for possible objects for a project
+
+AS a: Designer
+I want: Update User Stories
+so that: I can make corrections to senarios within a project
+
+AS a: Designer
+I want: Delete User Stories
+so that: I can remove irrelevant User Stories from a project
+
+AS a: Designer
+I want: Search User Stories
+so that: I can find a specific usecase that I am looking for within a project
+
+AS a: Designer
+I want: Complete User Stories
+so that: I can track which userstories have been fulfilled within the project
