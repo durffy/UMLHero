@@ -85,3 +85,7 @@ so that: I can remove irrelevant usecases from a project
 AS a: Designer
 I want: Search Usecases
 so that: I can find a specific usecase that I am looking for within a project
+
+AS a: Designer
+I want: Add Multiple Actors to Usecases
+so that: I can track multiple different actors that may use a usecase
