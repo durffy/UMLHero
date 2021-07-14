@@ -68,4 +68,9 @@ so that: I identify it later based on Functional, Non-Functional, Constraint req
 
 AS a: Designer
 I want: Create Usecases
-so that: I can review senarios for possible objects
+so that: I can track senarios for possible objects within a project
+
+AS a: Designer
+I want: Read Usecases
+so that: I can review senarios for possible objects for a project
+
