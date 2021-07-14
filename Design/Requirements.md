@@ -30,6 +30,7 @@ criteria:
 ## Use Cases and User Stories
 - CRUD User Stories
 - search user stories
+- Compelte user storiesz
 
 ## Domain Models
 - CRUD Domain Models
