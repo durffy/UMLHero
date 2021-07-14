@@ -63,3 +63,9 @@ so that: I can remove unecessary information from the requirements
 AS a: Designer
 I want: Categorize requirements
 so that: I identify it later based on Functional, Non-Functional, Constraint requirements
+
+# Use Cases and User Stories
+
+AS a: Designer
+I want: Create Usecases
+so that: I can review senarios for possible objects
