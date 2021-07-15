@@ -118,4 +118,8 @@ so that:  I can view the current attributes for objects/classes
 
 AS a: Designer
 I want: Update Attributes
-so that:  I can manage and make corrections to the Attributes of an object
+so that:  I can manage and make corrections to the attributes of an object
+
+AS a: Designer
+I want: Delete Attributes
+so that:  I can remove uneccessary attributes from an object
