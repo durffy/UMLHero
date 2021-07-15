@@ -99,3 +99,7 @@ so that: track the objects that will be implemented for a project
 AS a: Designer
 I want: Read Domain Models
 so that:  I can view the current objects/classes for a project
+
+AS a: Designer
+I want: Update Domain Models
+so that:  I can manage and make corrections to the objects of a project
