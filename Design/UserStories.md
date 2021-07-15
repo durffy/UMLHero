@@ -95,3 +95,7 @@ so that: I can track which userstories have been fulfilled within the project
 AS a: Designer
 I want: Create Domain Models
 so that: track the objects that will be implemented for a project
+
+AS a: Designer
+I want: Read Domain Models
+so that:  I can view the current objects/classes for a project
