@@ -103,3 +103,7 @@ so that:  I can view the current objects/classes for a project
 AS a: Designer
 I want: Update Domain Models
 so that:  I can manage and make corrections to the objects of a project
+
+AS a: Designer
+I want: Delete Domain Models
+so that:  I can remove uneccessary objects/classes from a project
