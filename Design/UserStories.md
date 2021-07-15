@@ -93,17 +93,17 @@ so that: I can track which userstories have been fulfilled within the project
 # Domain Models
 
 AS a: Designer
-I want: Create Domain Models
+I want: Create Classes
 so that: track the objects that will be implemented for a project
 
 AS a: Designer
-I want: Read Domain Models
+I want: Read Classes
 so that:  I can view the current objects/classes for a project
 
 AS a: Designer
-I want: Update Domain Models
+I want: Update Classes
 so that:  I can manage and make corrections to the objects of a project
 
 AS a: Designer
-I want: Delete Domain Models
+I want: Delete Classes
 so that:  I can remove uneccessary objects/classes from a project
