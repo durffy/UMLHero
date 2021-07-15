@@ -107,3 +107,7 @@ so that:  I can manage and make corrections to the objects of a project
 AS a: Designer
 I want: Delete Classes
 so that:  I can remove uneccessary objects/classes from a project
+
+AS a: Designer
+I want: Create Attributes
+so that: track the attributes of objects/classes
