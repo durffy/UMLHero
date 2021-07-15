@@ -82,7 +82,7 @@ AS a: Designer
 I want: Delete User Stories
 so that: I can remove irrelevant User Stories from a project
 
-AS a: Designer7
+AS a: Designer
 I want: Search User Stories
 so that: I can find a specific usecase that I am looking for within a project
 
