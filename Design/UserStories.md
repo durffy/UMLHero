@@ -111,3 +111,7 @@ so that:  I can remove uneccessary objects/classes from a project
 AS a: Designer
 I want: Create Attributes
 so that: track the attributes of objects/classes
+
+AS a: Designer
+I want: Read Attributes
+so that:  I can view the current attributes for objects/classes
