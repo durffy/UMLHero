@@ -82,7 +82,7 @@ AS a: Designer
 I want: Delete User Stories
 so that: I can remove irrelevant User Stories from a project
 
-AS a: Designer
+AS a: Designer7
 I want: Search User Stories
 so that: I can find a specific usecase that I am looking for within a project
 
@@ -115,3 +115,7 @@ so that: track the attributes of objects/classes
 AS a: Designer
 I want: Read Attributes
 so that:  I can view the current attributes for objects/classes
+
+AS a: Designer
+I want: Update Attributes
+so that:  I can manage and make corrections to the Attributes of an object
