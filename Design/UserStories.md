@@ -123,3 +123,7 @@ so that:  I can manage and make corrections to the attributes of an object
 AS a: Designer
 I want: Delete Attributes
 so that:  I can remove uneccessary attributes from an object
+
+AS a: Designer
+I want: Create Behaviors
+so that: track the behaviors of objects/classes
