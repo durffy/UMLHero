@@ -109,29 +109,29 @@ I want: Delete Classes
 so that:  I can remove uneccessary objects/classes from a project
 
 AS a: Designer
-I want: Create Attributes
-so that: track the attributes of objects/classes
+I want: Create Relationships
+so that: track the Relationships of objects/classes
 
 AS a: Designer
-I want: Read Attributes
-so that:  I can view the current attributes for objects/classes
+I want: Read Relationships
+so that:  I can view the current Relationships for objects/classes
 
 AS a: Designer
-I want: Update Attributes
-so that:  I can manage and make corrections to the attributes of an object
+I want: Update Relationships
+so that:  I can manage and make corrections to the Relationships of an object
 
 AS a: Designer
-I want: Delete Attributes
-so that:  I can remove uneccessary attributes from an object
+I want: Delete Relationships
+so that:  I can remove uneccessary Relationships from an object
 
 AS a: Designer
-I want: Create Behaviors
-so that: track the behaviors of objects/classes
+I want: Create Responsibilities
+so that: track the Responsibilities of objects/classes
 
 AS a: Designer
-I want: Read Behaviors
-so that:  I can view the current behaviors for objects/classes
+I want: Read Responsibilities
+so that:  I can view the current Responsibilities for objects/classes
 
 AS a: Designer
-I want: Update Behaviors
-so that:  I can manage and make corrections to the behaviors of an object
+I want: Update Responsibilities
+so that:  I can manage and make corrections to the Responsibilities of an object
