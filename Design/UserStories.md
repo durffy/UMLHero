@@ -127,3 +127,7 @@ so that:  I can remove uneccessary attributes from an object
 AS a: Designer
 I want: Create Behaviors
 so that: track the behaviors of objects/classes
+
+AS a: Designer
+I want: Read Behaviors
+so that:  I can view the current behaviors for objects/classes
