@@ -92,6 +92,10 @@ so that: I can track which userstories have been fulfilled within the project
 
 # Domain Models
 
+As a: Designer
+I want: Identify Nouns
+so that: I can easily identify possible objects and classes within a project
+
 AS a: Designer
 I want: Create Classes
 so that: track the objects that will be implemented for a project
@@ -109,17 +113,37 @@ I want: Delete Classes
 so that:  I can remove uneccessary objects/classes from a project
 
 AS a: Designer
-I want: Create Attributes
-so that: track the attributes of objects/classes
+I want: Create Relationships
+so that: track the Relationships of objects/classes
 
 AS a: Designer
-I want: Read Attributes
-so that:  I can view the current attributes for objects/classes
+I want: Read Relationships
+so that:  I can view the current Relationships for objects/classes
 
 AS a: Designer
-I want: Update Attributes
-so that:  I can manage and make corrections to the attributes of an object
+I want: Update Relationships
+so that:  I can manage and make corrections to the Relationships of an object
 
 AS a: Designer
-I want: Delete Attributes
-so that:  I can remove uneccessary attributes from an object
+I want: Delete Relationships
+so that:  I can remove uneccessary Relationships from an object
+
+As a: Designer
+I want: Identify Verbs
+so that: I can easily identify possible responsibilities for objects within a project from user stories
+
+AS a: Designer
+I want: Create Responsibilities
+so that: track the Responsibilities of objects/classes
+
+AS a: Designer
+I want: Read Responsibilities
+so that:  I can view the current Responsibilities for objects/classes
+
+AS a: Designer
+I want: Update Responsibilities
+so that:  I can manage and make corrections to the Responsibilities of an object
+
+AS a: Designer
+I want: Delete Responsibilities
+so that:  I can remove uneccessary Responsibilities from an object
