@@ -92,6 +92,10 @@ so that: I can track which userstories have been fulfilled within the project
 
 # Domain Models
 
+As a: Designer
+I want: Identify Nouns
+so that: I can easily identify possible objects and classes within a project
+
 AS a: Designer
 I want: Create Classes
 so that: track the objects that will be implemented for a project
