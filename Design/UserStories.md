@@ -128,6 +128,10 @@ AS a: Designer
 I want: Delete Relationships
 so that:  I can remove uneccessary Relationships from an object
 
+As a: Designer
+I want: Identify Verbs
+so that: I can easily identify possible responsibilities for objects within a project from user stories
+
 AS a: Designer
 I want: Create Responsibilities
 so that: track the Responsibilities of objects/classes
