@@ -143,3 +143,7 @@ so that:  I can view the current Responsibilities for objects/classes
 AS a: Designer
 I want: Update Responsibilities
 so that:  I can manage and make corrections to the Responsibilities of an object
+
+AS a: Designer
+I want: Delete Responsibilities
+so that:  I can remove uneccessary Responsibilities from an object
