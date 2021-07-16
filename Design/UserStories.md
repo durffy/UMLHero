@@ -131,3 +131,7 @@ so that: track the behaviors of objects/classes
 AS a: Designer
 I want: Read Behaviors
 so that:  I can view the current behaviors for objects/classes
+
+AS a: Designer
+I want: Update Behaviors
+so that:  I can manage and make corrections to the behaviors of an object
