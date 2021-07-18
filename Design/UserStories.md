@@ -168,4 +168,8 @@ so that:  I can remove uneccessary classes from a project
 
 AS a: Designer
 I want: Create Attributes
-so that: track the Attributes that will be implemented for a Attributes
+so that: track the Attributes that will be implemented for a Class
+
+AS a: Designer
+I want: Read Attributes
+so that:  I can view the current Attributes for a Class
