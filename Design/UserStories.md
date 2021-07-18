@@ -157,3 +157,7 @@ so that: track the Classes that will be implemented for a project
 AS a: Designer
 I want: Read Classes
 so that:  I can view the current classes for a project
+
+AS a: Designer
+I want: Update Classes
+so that:  I can manage and make corrections to the classes of a project
