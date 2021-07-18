@@ -190,3 +190,7 @@ AS a: Designer
 I want: Read Behaviors
 so that:  I can view the current Behaviors for classes
 
+AS a: Designer
+I want: Update Behaviors
+so that:  I can manage and make corrections to the Behaviors of a class
+
