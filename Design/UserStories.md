@@ -173,3 +173,7 @@ so that: track the Attributes that will be implemented for a Class
 AS a: Designer
 I want: Read Attributes
 so that:  I can view the current Attributes for a Class
+
+AS a: Designer
+I want: Update Attributes
+so that:  I can manage and make corrections to the attributes of a class
