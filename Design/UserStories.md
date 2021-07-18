@@ -181,3 +181,7 @@ so that:  I can manage and make corrections to the attributes of a class
 AS a: Designer
 I want: Delete Attributes
 so that:  I can remove uneccessary Attributeses from a Class
+
+AS a: Designer
+I want: Create Behaviors
+so that: track the Behaviors of classes
