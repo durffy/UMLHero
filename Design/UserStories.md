@@ -97,19 +97,19 @@ I want: Identify Nouns
 so that: I can easily identify possible objects and classes within a project
 
 AS a: Designer
-I want: Create Classes
+I want: Create Objects
 so that: track the objects that will be implemented for a project
 
 AS a: Designer
-I want: Read Classes
+I want: Read Objects
 so that:  I can view the current objects/classes for a project
 
 AS a: Designer
-I want: Update Classes
+I want: Update Objects
 so that:  I can manage and make corrections to the objects of a project
 
 AS a: Designer
-I want: Delete Classes
+I want: Delete Objects
 so that:  I can remove uneccessary objects/classes from a project
 
 AS a: Designer
@@ -153,3 +153,7 @@ so that:  I can remove uneccessary Responsibilities from an object
 AS a: Designer
 I want: Create Classes
 so that: track the Classes that will be implemented for a project
+
+AS a: Designer
+I want: Read Classes
+so that:  I can view the current classes for a project
