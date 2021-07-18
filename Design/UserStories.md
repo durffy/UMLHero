@@ -163,5 +163,9 @@ I want: Update Classes
 so that:  I can manage and make corrections to the classes of a project
 
 AS a: Designer
-I want: Delete Classes
+I want: Delete Attributeses
 so that:  I can remove uneccessary classes from a project
+
+AS a: Designer
+I want: Create Attributes
+so that: track the Attributes that will be implemented for a Attributes
