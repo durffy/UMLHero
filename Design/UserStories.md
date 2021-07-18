@@ -194,3 +194,6 @@ AS a: Designer
 I want: Update Behaviors
 so that:  I can manage and make corrections to the Behaviors of a class
 
+AS a: Designer
+I want: Delete Behaviors
+so that:  I can remove uneccessary Behaviors from a Class
