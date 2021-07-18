@@ -161,3 +161,7 @@ so that:  I can view the current classes for a project
 AS a: Designer
 I want: Update Classes
 so that:  I can manage and make corrections to the classes of a project
+
+AS a: Designer
+I want: Delete Classes
+so that:  I can remove uneccessary classes from a project
