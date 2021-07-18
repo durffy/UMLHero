@@ -185,3 +185,8 @@ so that:  I can remove uneccessary Attributeses from a Class
 AS a: Designer
 I want: Create Behaviors
 so that: track the Behaviors of classes
+
+AS a: Designer
+I want: Read Behaviors
+so that:  I can view the current Behaviors for classes
+
