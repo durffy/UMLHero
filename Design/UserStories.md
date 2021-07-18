@@ -147,3 +147,9 @@ so that:  I can manage and make corrections to the Responsibilities of an object
 AS a: Designer
 I want: Delete Responsibilities
 so that:  I can remove uneccessary Responsibilities from an object
+
+# Class Diagrams
+
+AS a: Designer
+I want: Create Classes
+so that: track the Classes that will be implemented for a project
