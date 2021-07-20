@@ -1,9 +1,23 @@
+# Projects
+## attributes
+- Project: List
+## behaviors
++ createProject: Project
++ readProject(projectId): Project
++ updateProject: Project
++ deleteProject: Project
+
+
 # name: Project
 ## Attributes
-id
-name
-creationDate
-lastUpdate
+- id
+- name
+- creationDate
+- lastUpdate
 ## Behaviors
-updateName
-
+getId
+getName
+setName
+getCreationDate
+getLastUpdate
+setLastUpdate
