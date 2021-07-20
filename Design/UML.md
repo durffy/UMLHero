@@ -35,3 +35,19 @@ getDescription
 setDescription
 getCreationDate
 getLastUpdate
+
+
+# UserStories
+## Attributes
+- id
+- Actor
+- Action
+- Reason
+## behaviors
+getId
+getActor
+setActor
+getAction
+setAction
+getReason
+setReason
