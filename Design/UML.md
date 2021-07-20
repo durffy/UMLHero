@@ -43,6 +43,8 @@ getLastUpdate
 - Actor
 - Action
 - Reason
+- creationDate
+- lastUpdate
 ## behaviors
 getId
 getActor
@@ -51,3 +53,20 @@ getAction
 setAction
 getReason
 setReason
+
+
+# DomainObject
+## Attributes
+- id
+- name
+- responsibility
+- creationDate
+- lastUpdate
+## Behavior
+getId
+getName
+setName
+getResponsibility
+setResponsibility
+getCreationDate
+getLastUpdate
