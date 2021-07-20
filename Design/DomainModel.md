@@ -6,7 +6,7 @@ Requirements
 UserStories
 
 DomainModels
-Utility
+DomainUtilities
 
 ClassDiagrams
 Class
