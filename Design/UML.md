@@ -21,3 +21,17 @@ setName
 getCreationDate
 getLastUpdate
 setLastUpdate
+
+
+# Requirements
+## Attributes
+- id
+- description
+- creationDate
+- lastUpdate
+## Behaviors
+getId
+getDescription
+setDescription
+getCreationDate
+getLastUpdate
