@@ -59,8 +59,11 @@ setReason
 ## Attributes
 DomainObjects
 ## Behavior
-getAllDomainObjects
+createDomainObject(DomainObject)
+getAllDomainObjects()
 getDomainObject(id)
+updateDomainObject(DomainObject)
+deleteDomainObject(DomainObject)
 
 # DomainObject
 ## Attributes
@@ -77,3 +80,13 @@ getResponsibility
 setResponsibility
 getCreationDate
 getLastUpdate
+
+
+# ClassDiagrams
+Classes
+## Behaviors
+createClass(Class)
+getAllClasses
+getClass(id)
+updateClass(Class)
+deleteClass(id)
