@@ -55,6 +55,13 @@ getReason
 setReason
 
 
+# DomainModel
+## Attributes
+DomainObjects
+## Behavior
+getAllDomainObjects
+getDomainObject(id)
+
 # DomainObject
 ## Attributes
 - id
