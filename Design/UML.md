@@ -90,3 +90,18 @@ getAllClasses
 getClass(id)
 updateClass(Class)
 deleteClass(id)
+
+# Class
+## Attributes
+Attributes[]
+Behaviors[]
+
+## Behaviors
+getAllAttributes
+getAttribute
+updateAttribute
+deleteAttribute
+getAllBehaviors
+getBehavior
+updateBehavior
+deleteBehavior
