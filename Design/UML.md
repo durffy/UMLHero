@@ -105,3 +105,19 @@ getAllBehaviors
 getBehavior
 updateBehavior
 deleteBehavior
+
+
+# Attribute
+## Attributes
+id
+name
+type
+private
+## Behaviors
+getId
+getName
+setName
+getType
+setType
+getPrivate
+setPrivate
