@@ -121,3 +121,18 @@ getType
 setType
 getPrivate
 setPrivate
+
+# Behaviors
+## Attributes
+id
+name
+type
+private
+## Behaviors
+getId
+getName
+setName
+getType
+setType
+getPrivate
+setPrivate
