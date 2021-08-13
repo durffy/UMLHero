@@ -17,7 +17,7 @@
     "prettier": "^2.3.2"
   },
   "scripts": {
-    "dev": "nodemon --ignore feedback.json server.js",
+    "dev": "nodemon --ignore project.json server.js",
     "start": "node server.js"
   },
   "repository": {

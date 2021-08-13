@@ -1,14 +1,13 @@
-const { response } = require('express');
 const express = require('express');
 
 const router = express.Router();
 
-module.exports = () => {
-  router.get('/', (request, response) => {
-    response.render('pages/projects', {
-      pageTitle: 'Projects',
-      projects: 'ProjectListItem',
-    });
+module.exports = (params) => {
+  const { projectService } = params;
+
+  router.get('/', async (request, response) => {
+    const projects = await projectService.getList();
+    return response.json(projects);
   });
 
   return router;

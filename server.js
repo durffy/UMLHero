@@ -2,6 +2,10 @@
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
+const ProjectService = require('./services/ProjectService');
+
+// setup the project services
+const projectService = new ProjectService('./data/project.json');
 
 // setup for server listening port
 const port = 3000;
@@ -17,4 +21,9 @@ app.set('views', path.join(__dirname, './views'));
 app.use(express.static(path.join(__dirname, './static')));
 
 // Routes implementation
-app.use('/', routes());
+app.use(
+  '/',
+  routes({
+    projectService,
+  })
+);
