@@ -1,1 +1,4 @@
-scratch
+node_modules
+.eslintrc.json
+.prettierrc
+package.json
