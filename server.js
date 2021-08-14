@@ -1,4 +1,5 @@
 // Requirement imports
+const cookieSession = require('cookie-session');
 const express = require('express');
 const path = require('path');
 const routes = require('./routes');
@@ -10,6 +11,13 @@ const projectService = new ProjectService('./data/project.json');
 // setup for server listening port
 const port = 3000;
 const app = express();
+
+app.use(
+  cookieSession({
+    name: 'sesssion',
+    keys: ['Gajisdfoookll', 'ahsdfomviiiiiAA'],
+  })
+);
 
 app.listen(port, () => {
   console.log(`Express Server listening on port: ${port}!`);
@@ -23,6 +31,7 @@ app.use(express.static(path.join(__dirname, './static')));
 // Routes implementation
 app.use(
   '/',
+  // add additional services here
   routes({
     projectService,
   })
