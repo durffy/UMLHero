@@ -1,12 +1,38 @@
+// Requirement imports
+const cookieSession = require('cookie-session');
 const express = require('express');
 const path = require('path');
+const routes = require('./routes');
+const ProjectService = require('./services/ProjectService');
 
+// setup the project services
+const projectService = new ProjectService('./data/project.json');
+
+// setup for server listening port
+const port = 3000;
 const app = express();
 
-const port = 3000;
+app.use(
+  cookieSession({
+    name: 'sesssion',
+    keys: ['Gajisdfoookll', 'ahsdfomviiiiiAA'],
+  })
+);
 
-app.use(express.static(path.join(__dirname, './view')));
-
-app.get('/', (request, response) => {
-  response.sendFile(path.join(__dirname, './view/projects.html'));
+app.listen(port, () => {
+  console.log(`Express Server listening on port: ${port}!`);
 });
+
+// View Engine setup
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, './views'));
+app.use(express.static(path.join(__dirname, './static')));
+
+// Routes implementation
+app.use(
+  '/',
+  // add additional services here
+  routes({
+    projectService,
+  })
+);
