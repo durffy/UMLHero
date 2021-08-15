@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, './static')));
 app.locals.siteName = 'UML Hero';
 app.use(async (request, response, next) => {
   try {
-    const names = await projectService.getNames();
+    const names = await projectService.getData();
     response.locals.projectNames = names;
     console.log(response.locals);
     return next();
