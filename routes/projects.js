@@ -13,5 +13,12 @@ module.exports = (params) => {
     });
   });
 
+  router.get('/:name', async (request, response) => {
+    const project = await projectService.getProject(request.params.name);
+    response.render('pages/project-detail', {
+      pageTitle: request.params.name,
+      project,
+    });
+  });
   return router;
 };

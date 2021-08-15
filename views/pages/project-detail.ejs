@@ -1,0 +1,50 @@
+<%- include('../partials/header') %>
+
+<h1>Project Details</h1>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.id %>"
+    disabled
+  />
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Created Date</span>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.createdDate %>"
+    disabled
+  />
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.name %>"
+  />
+</div>
+
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+  <input
+    type="text"
+    class="form-control"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.description %>"
+  />
+</div>
+
+<%-include('../partials/footer')%>
