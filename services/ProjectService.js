@@ -24,12 +24,6 @@ class ProjectService {
     return data;
   }
 
-  /**
-   * Add a new project item
-   * @param {*} name The name of the user
-   * @param {*} title The title of the project message
-   * @param {*} message The project message
-   */
   async addEntry(id, name) {
     const data = (await this.getData()) || [];
     const createdDate = Date.now();
@@ -48,7 +42,7 @@ class ProjectService {
   }
 
   /**
-   * Returns a list of speakers name and short name
+   * Returns a list of projects by name
    */
   async getNames() {
     const data = await this.getData();
