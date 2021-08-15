@@ -1,8 +1,10 @@
 <%- include('../partials/header') %>
 
 <h1><%= pageTitle %></h1>
-<ul>
-  <li><%= projects %></li>
+<ul class="list-group">
+  <% projectNames.forEach(function(project){%>
+  <a class="list-group-item"><%= project.createdDate %>, <%= project.name %></a>
+  <%})%>
 </ul>
 
 <%- include('../partials/footer')%>
