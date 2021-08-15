@@ -3,7 +3,7 @@
 <h1><%= pageTitle %></h1>
 <ul class="list-group">
   <% projectNames.forEach(function(project){%>
-  <a class="list-group-item">
+  <a class="list-group-item" href="projects/<%= project.name %>">
     <%= project.createdDate %>, <%= project.name %> , "<%= project.description %>"
   </a>
   <%})%>
