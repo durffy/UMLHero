@@ -1,4 +1,20 @@
 [
-  { "id": 0, "name": "UMLHero1", "createdDate": "2021.08.13" },
-  { "id": 1, "name": "CastAway", "createdDate": "2021.08.12" }
+  {
+    "id": 0,
+    "name": "UMLHero1",
+    "description": "A project management software",
+    "createdDate": "2021.08.13"
+  },
+  {
+    "id": 1,
+    "name": "CastAway",
+    "description": "Cast movies, music, or pictures to any TV",
+    "createdDate": "2021.08.12"
+  },
+  {
+    "id": 1,
+    "name": "Turn",
+    "description": "Find directions to new destinations",
+    "createdDate": "2021.08.10"
+  }
 ]

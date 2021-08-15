@@ -30,9 +30,10 @@ class ProjectService {
    * @param {*} title The title of the project message
    * @param {*} message The project message
    */
-  async addEntry(name, email, title, message) {
+  async addEntry(id, name) {
     const data = (await this.getData()) || [];
-    data.unshift({ name, email, title, message });
+    const createdDate = Date.now();
+    data.unshift({ id, name, createdDate });
     return writeFile(this.datafile, JSON.stringify(data));
   }
 
@@ -43,6 +44,16 @@ class ProjectService {
     const data = await readFile(this.datafile, 'utf8');
     if (!data) return [];
     return JSON.parse(data);
+  }
+
+  /**
+   * Returns a list of speakers name and short name
+   */
+  async getNames() {
+    const data = await this.getData();
+
+    // We are using map() to transform the array we get into another one
+    return data.map((project) => ({ name: project.name }));
   }
 }
 

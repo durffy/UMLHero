@@ -28,6 +28,19 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, './views'));
 app.use(express.static(path.join(__dirname, './static')));
 
+// middleware functions and variables for global site template usage
+app.locals.siteName = 'UML Hero';
+app.use(async (request, response, next) => {
+  try {
+    const names = await projectService.getData();
+    response.locals.projectNames = names;
+    console.log(response.locals);
+    return next();
+  } catch (err) {
+    return next(err);
+  }
+});
+
 // Routes implementation
 app.use(
   '/',
