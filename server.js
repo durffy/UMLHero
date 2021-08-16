@@ -34,7 +34,6 @@ app.use(async (request, response, next) => {
   try {
     const names = await projectService.getData();
     response.locals.projectNames = names;
-    console.log(response.locals);
     return next();
   } catch (err) {
     return next(err);
