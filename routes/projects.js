@@ -10,6 +10,7 @@ module.exports = (params) => {
 
     return response.render('pages/projects', {
       pageTitle: 'projects',
+      projects,
     });
   });
 
