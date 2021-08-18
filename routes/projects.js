@@ -14,6 +14,12 @@ module.exports = (params) => {
     });
   });
 
+  router.get('/create-project', (request, response) => {
+    return response.render('pages/create-project', {
+      pageTitle: 'Create Project',
+    });
+  });
+
   router.get('/:name', async (request, response) => {
     const project = await projectService.getProject(request.params.name);
     response.render('pages/project-detail', {
@@ -21,5 +27,6 @@ module.exports = (params) => {
       project,
     });
   });
+
   return router;
 };
