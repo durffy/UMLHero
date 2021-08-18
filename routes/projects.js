@@ -9,7 +9,8 @@ module.exports = (params) => {
     const projects = await projectService.getList();
 
     return response.render('pages/projects', {
-      pageTitle: 'projects',
+      pageTitle: 'Project List',
+      projects,
     });
   });
 
