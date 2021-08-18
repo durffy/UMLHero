@@ -35,6 +35,7 @@ setLastUpdate
 ## Attributes
 
 - id
+- title
 - description
 - creationDate
 - lastUpdate
