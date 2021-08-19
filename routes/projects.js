@@ -28,5 +28,13 @@ module.exports = (params) => {
     });
   });
 
+  // takes input from the create-project form and adds the entry to the data/project.json
+  router.post('/', async (request, response) => {
+    console.log(request.body);
+    const { name, description } = request.body;
+    await projectService.addEntry(name, description);
+
+    return response.redirect('projects');
+  });
   return router;
 };
