@@ -36,5 +36,13 @@ module.exports = (params) => {
 
     return response.redirect('projects');
   });
+
+  router.put('/', async (request, response) => {
+    console.log(request.body);
+    await projectService.updateEntry(request.params.id);
+
+    return response.redirect('projects');
+  });
+
   return router;
 };
