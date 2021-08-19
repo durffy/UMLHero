@@ -30,22 +30,30 @@ class ProjectService {
 
   async getList() {
     const data = await this.getData();
-    data[0]['createdDate'] = new Date(data[0]['createdDate']);
+    for (let i in data) {
+      data[i]['createdDate'] = new Date(data[i]['createdDate']);
+      data[i]['lastUpdated'] = new Date(data[i]['lastUpdated']);
+    }
+    console.log(data);
     return data;
   }
 
   async getData() {
     const data = await readFile(this.datafile, 'utf8');
     if (!data) return [];
+
+    console.log('getData');
     return JSON.parse(data);
   }
 
   async getNames() {
+    console.log('getNames');
     const data = await this.getData();
     return data.map((project) => ({ name: project.name }));
   }
 
   async getProject(name) {
+    console.log('getProject');
     const data = await this.getData();
     const project = data.find((elm) => {
       return elm.name === name;
