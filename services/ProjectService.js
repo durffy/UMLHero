@@ -24,11 +24,12 @@ class ProjectService {
     return data;
   }
 
-  async addEntry(id, name) {
+  async addEntry(name, description) {
     const data = (await this.getData()) || [];
     const createdDate = Date.now();
     const lastUpdated = Date.now();
-    data.unshift({ id, name, createdDate, lastUpdated });
+    const id = 0;
+    data.unshift({ id, name, description, createdDate, lastUpdated });
     return writeFile(this.datafile, JSON.stringify(data));
   }
 

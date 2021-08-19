@@ -14,12 +14,27 @@ module.exports = (params) => {
     });
   });
 
+  router.get('/create-project', (request, response) => {
+    return response.render('pages/create-project', {
+      pageTitle: 'Create Project',
+    });
+  });
+
   router.get('/:name', async (request, response) => {
     const project = await projectService.getProject(request.params.name);
     response.render('pages/project-detail', {
       pageTitle: request.params.name,
       project,
     });
+  });
+
+  // takes input from the create-project form and adds the entry to the data/project.json
+  router.post('/', async (request, response) => {
+    console.log(request.body);
+    const { name, description } = request.body;
+    await projectService.addEntry(name, description);
+
+    return response.redirect('projects');
   });
   return router;
 };
