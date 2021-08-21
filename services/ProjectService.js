@@ -10,20 +10,13 @@ const writeFile = util.promisify(fs.writeFile);
 class ProjectService {
   /**
    * Constructor
-   * @param {*} datafile Path to a JSOn file that contains the project data
+   * @param {*} datafile Path to a JSON file that contains the project data
    */
   constructor(datafile) {
     this.datafile = datafile;
   }
 
-  /**
-   * Get all project items
-   */
-  async getList() {
-    const data = await this.getData();
-    return data;
-  }
-
+  // CREATE METHODS
   async addEntry(name, description) {
     const data = (await this.getData()) || [];
     const createdDate = Date.now();
@@ -33,40 +26,61 @@ class ProjectService {
     return writeFile(this.datafile, JSON.stringify(data));
   }
 
-  /**
-   * Fetches project data from the JSON file provided to the constructor
-   */
+  // READ METHODS
+
+  async getList() {
+    const data = await this.getData();
+    for (let i in data) {
+      data[i]['createdDate'] = new Date(data[i]['createdDate']);
+      data[i]['lastUpdated'] = new Date(data[i]['lastUpdated']);
+    }
+    console.log(data);
+    return data;
+  }
+
   async getData() {
     const data = await readFile(this.datafile, 'utf8');
     if (!data) return [];
+
+    console.log('getData');
     return JSON.parse(data);
   }
 
-  /**
-   * Returns a list of projects by name
-   */
   async getNames() {
+    console.log('getNames');
     const data = await this.getData();
-
-    // We are using map() to transform the array we get into another one
     return data.map((project) => ({ name: project.name }));
   }
 
   async getProject(name) {
+    console.log('getProject');
     const data = await this.getData();
     const project = data.find((elm) => {
       return elm.name === name;
     });
 
     if (!project) return null;
+    project.createdDate = new Date(project.createdDate);
+    project.lastUpdated = new Date(project.lastUpdated);
 
     return {
       id: project.id,
       name: project.name,
       description: project.description,
       createdDate: project.createdDate,
+      lastUpdated: project.lastUpdated,
     };
   }
+
+  // UPDATE METHODS
+  async updateEntry(id, name, description, createdDate) {
+    const data = (await this.getData()) || [];
+    const lastUpdated = Date.now();
+    data.unshift({ id, name, description, createdDate, lastUpdated });
+    return writeFile(this.datafile, JSON.stringify(data));
+  }
+
+  // DELETE METHODS
 }
 
 module.exports = ProjectService;
