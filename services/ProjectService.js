@@ -17,11 +17,12 @@ class ProjectService {
   }
 
   // CREATE METHODS
-  async addEntry(name, description) {
+  async addProject(name, description) {
     const data = (await this.getData()) || [];
+
     const createdDate = Date.now();
     const lastUpdated = Date.now();
-    const id = 0;
+    const id = Object.keys(data).length;
     data.unshift({ id, name, description, createdDate, lastUpdated });
     return writeFile(this.datafile, JSON.stringify(data));
   }
@@ -34,7 +35,7 @@ class ProjectService {
       data[i]['createdDate'] = new Date(data[i]['createdDate']);
       data[i]['lastUpdated'] = new Date(data[i]['lastUpdated']);
     }
-    console.log(data);
+
     return data;
   }
 
@@ -44,12 +45,6 @@ class ProjectService {
 
     console.log('getData');
     return JSON.parse(data);
-  }
-
-  async getNames() {
-    console.log('getNames');
-    const data = await this.getData();
-    return data.map((project) => ({ name: project.name }));
   }
 
   async getProject(name) {
@@ -73,10 +68,10 @@ class ProjectService {
   }
 
   // UPDATE METHODS
-  async updateEntry(id, name, description, createdDate) {
+  async updateProject(name, description) {
     const data = (await this.getData()) || [];
     const lastUpdated = Date.now();
-    data.unshift({ id, name, description, createdDate, lastUpdated });
+    data.unshift({ name, description, lastUpdated });
     return writeFile(this.datafile, JSON.stringify(data));
   }
 
