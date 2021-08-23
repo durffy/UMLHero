@@ -8,6 +8,7 @@
     <input
       type="text"
       class="form-control"
+      name="id"
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       value="<%= project.id %>"
@@ -20,6 +21,7 @@
     <input
       type="text"
       class="form-control"
+      name="createdDate"
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       value="<%= project.createdDate %>"
@@ -32,6 +34,7 @@
     <input
       type="text"
       class="form-control"
+      name="lastUpdated"
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       value="<%= project.lastUpdated %>"
@@ -44,6 +47,7 @@
     <input
       type="text"
       class="form-control"
+      name="name"
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       value="<%= project.name %>"
@@ -55,12 +59,13 @@
     <input
       type="text"
       class="form-control"
+      name="description"
       aria-label="Sizing example input"
       aria-describedby="inputGroup-sizing-default"
       value="<%= project.description %>"
     />
   </div>
-  <a type="submit" class="btn btn-secondary" href="/projects">Cancel</a>
+  <a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
   <button type="submit" class="btn btn-primary float-right">Submit</button>
 </form>
-sd <%-include('../partials/footer')%>
+<%-include('../partials/footer')%>
