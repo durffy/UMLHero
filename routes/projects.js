@@ -32,16 +32,15 @@ module.exports = (params) => {
   router.post('/', async (request, response) => {
     console.log(request.body);
     const { name, description } = request.body;
-    await projectService.addEntry(name, description);
+    await projectService.addProject(name, description);
 
     return response.redirect('projects');
   });
 
   router.put('/', async (request, response) => {
-    console.log(request.body);
-    await projectService.updateEntry(request.params.id);
-
-    return response.redirect('projects');
+    const { id, name, description } = request.body;
+    await projectService.updateProject(id, name, description);
+    return response.send(`${request.body}`);
   });
 
   return router;
