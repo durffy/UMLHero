@@ -42,13 +42,10 @@ class ProjectService {
   async getData() {
     const data = await readFile(this.datafile, 'utf8');
     if (!data) return [];
-
-    console.log('getData');
     return JSON.parse(data);
   }
 
   async getProject(name) {
-    console.log('getProject');
     const data = await this.getData();
     const project = data.find((elm) => {
       return elm.name === name;
@@ -68,10 +65,10 @@ class ProjectService {
   }
 
   // UPDATE METHODS
-  async updateProject(name, description) {
+  async updateProject(id, name, description) {
     const data = (await this.getData()) || [];
     const lastUpdated = Date.now();
-    data.unshift({ name, description, lastUpdated });
+    data.unshift({ id, name, description, lastUpdated });
     return writeFile(this.datafile, JSON.stringify(data));
   }
 
