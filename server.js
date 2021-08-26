@@ -43,7 +43,7 @@ app.use(async (request, response, next) => {
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Routes implementation
+// Routes implementation. Helps route requests to other routes
 app.use(
   '/',
   // add additional services here
