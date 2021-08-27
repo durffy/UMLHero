@@ -4,7 +4,6 @@ const express = require('express');
 const path = require('path');
 const routes = require('./routes');
 const ProjectService = require('./services/ProjectService');
-const bodyParser = require('body-parser');
 
 // setup the project services
 const projectService = new ProjectService('./data/project.json');
@@ -41,7 +40,7 @@ app.use(async (request, response, next) => {
   }
 });
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 
 // Routes implementation. Helps route requests to other routes
 app.use(
