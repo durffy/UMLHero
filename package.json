@@ -8,9 +8,13 @@
     "cookie-session": "^1.4.0",
     "ejs": "^3.1.6",
     "express": "^4.17.1",
-    "mongodb": "^4.1.0"
+    "mongodb": "^4.1.0",
+    "mongoose": "^6.0.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -21,7 +25,8 @@
   },
   "scripts": {
     "dev": "nodemon --ignore project.json server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "debug": "set DEBUG=express:* & nodemon server.js"
   },
   "repository": {
     "type": "git",
