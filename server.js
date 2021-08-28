@@ -1,12 +1,18 @@
 // Requirement imports
+const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const express = require('express');
 const path = require('path');
-const routes = require('./routes');
-const ProjectService = require('./services/ProjectService');
 
-// setup the project services
-const projectService = new ProjectService('./data/project.json');
+const routes = require('./routes');
+const { getProjects } = require('./src/controller/projectController');
+
+// mongoose connection
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/UMLHero', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // setup for server listening port
 const port = 3000;
@@ -32,8 +38,6 @@ app.use(express.static(path.join(__dirname, './static')));
 app.locals.siteName = 'UML Hero';
 app.use(async (request, response, next) => {
   try {
-    const names = await projectService.getData();
-    response.locals.projectNames = names;
     return next();
   } catch (err) {
     return next(err);
@@ -46,7 +50,5 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
   '/',
   // add additional services here
-  routes({
-    projectService,
-  })
+  routes('./views/projects')
 );
