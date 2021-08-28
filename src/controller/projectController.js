@@ -7,16 +7,26 @@ const { ProjectSchema } = require('../model/projectModel');
 
 const Project = mongoose.model('projects', ProjectSchema);
 
-module.exports.getProjects = function (callback) {
-  // we will pass a function :)
-  Project.find()
-    .lean()
-    .exec(function (err, docs) {
-      callback(docs); // <-- call the function passed as parameter
-    });
-};
+class ProjectModel {
+  constructor() {
+    this.Project = Project;
+  }
 
-module.exports.addNewProject = (request, response) => {
-  const newProject = new Project(request.body);
-  newProject.save();
-};
+  async addNewProject(params) {
+    const newProject = new Project(params);
+    newProject.save();
+  }
+
+  async getProjects() {
+    const data = await this.Project.find().lean().exec();
+    return data;
+  }
+
+  async getById(params) {
+    const { id } = params;
+    const data = await Project.findById(id).exec();
+    return data;
+  }
+}
+
+module.exports = ProjectModel;

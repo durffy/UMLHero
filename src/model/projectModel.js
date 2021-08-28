@@ -16,7 +16,7 @@ const ProjectSchema = new Schema({
     type: Date,
     default: Date.now,
   },
-  LastUpdated: {
+  lastUpdated: {
     type: Date,
     default: Date.now,
   },

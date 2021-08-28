@@ -44,8 +44,12 @@ app.use(async (request, response, next) => {
   }
 });
 
-app.use(express.urlencoded({ extended: true }));
-
+app.use(express.json());
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 // Routes implementation. Helps route requests to other routes
 app.use(
   '/',
