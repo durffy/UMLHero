@@ -16,7 +16,7 @@ module.exports.getProjects = function (callback) {
     });
 };
 
-module.addNewProject = (request, response) => {
+module.exports.addNewProject = (request, response) => {
   const newProject = new Project(request.body);
   newProject.save();
 };
