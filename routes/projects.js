@@ -39,9 +39,12 @@ module.exports = (params) => {
 
   // UPDATE
   router.put('/:id', async (request, response) => {
-    const { id, name, description } = request.body;
-    await projectService.updateProject(id, name, description);
     return response.send(`${request.body}`);
+  });
+
+  router.delete('/:id', async (request, response) => {
+    await controller.deleteById(request.params);
+    return response.redirect('/projects');
   });
 
   return router;
