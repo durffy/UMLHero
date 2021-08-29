@@ -27,6 +27,11 @@ class ProjectModel {
     const data = await Project.findById(id).exec();
     return data;
   }
+
+  async deleteById(params) {
+    const { id } = params;
+    await Project.findByIdAndDelete(id).exec();
+  }
 }
 
 module.exports = ProjectModel;
