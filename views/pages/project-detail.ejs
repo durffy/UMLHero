@@ -68,4 +68,22 @@
   <a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
   <button type="submit" class="btn btn-primary float-right">Submit</button>
 </form>
+
+<button id="delete" type="delete" class="btn btn-danger">DELETE</button>
+
+<script>
+  $(document).ready(function () {
+    $('#delete').click(function () {
+      var settings = {
+        url: 'http://localhost:3000/projects/612d50fdde76b1e3e80e3502',
+        method: 'DELETE',
+        timeout: 0,
+      };
+
+      $.ajax(settings).done(function (response) {
+        console.log('test');
+      });
+    });
+  });
+</script>
 <%-include('../partials/footer')%>
