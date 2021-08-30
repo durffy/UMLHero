@@ -9,7 +9,6 @@ module.exports = (params) => {
   // CREATE
 
   router.post('/', async (request, response) => {
-    console.log(request.body);
     controller.addNewProject(request.body);
     return response.redirect('/projects');
   });
@@ -44,6 +43,7 @@ module.exports = (params) => {
 
   router.delete('/:id', async (request, response) => {
     await controller.deleteById(request.params);
+    console.log('deleted object');
     return response.redirect('/projects');
   });
 
