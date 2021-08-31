@@ -1,53 +1,89 @@
 <%- include('../partials/header') %>
 
 <h1>Project Details</h1>
-<div class="input-group mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
-  <input
-    type="text"
-    class="form-control"
-    aria-label="Sizing example input"
-    aria-describedby="inputGroup-sizing-default"
-    value="<%= project.id %>"
-    disabled
-  />
-</div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-default">Created Date</span>
-  <input
-    type="text"
-    class="form-control"
-    aria-label="Sizing example input"
-    aria-describedby="inputGroup-sizing-default"
-    value="<%= project.createdDate %>"
-    disabled
-  />
-</div>
+<form class="update-project" method="POST" action="/update-project">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+    <input
+      type="text"
+      class="form-control"
+      name="id"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="<%= project.id %>"
+      disabled
+    />
+  </div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
-  <input
-    type="text"
-    class="form-control"
-    aria-label="Sizing example input"
-    aria-describedby="inputGroup-sizing-default"
-    value="<%= project.name %>"
-  />
-</div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Created Date</span>
+    <input
+      type="text"
+      class="form-control"
+      name="createdDate"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="<%= project.createdDate %>"
+      disabled
+    />
+  </div>
 
-<div class="input-group mb-3">
-  <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
-  <input
-    type="text"
-    class="form-control"
-    aria-label="Sizing example input"
-    aria-describedby="inputGroup-sizing-default"
-    value="<%= project.description %>"
-  />
-</div>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Last Updated Date</span>
+    <input
+      type="text"
+      class="form-control"
+      name="lastUpdated"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="<%= project.lastUpdated %>"
+      disabled
+    />
+  </div>
 
-<button type="button" class="btn btn-secondary">Cancel</button>
-<button type="button" class="btn btn-primary">Save</button>
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
+    <input
+      type="text"
+      class="form-control"
+      name="name"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="<%= project.name %>"
+    />
+  </div>
 
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+    <input
+      type="text"
+      class="form-control"
+      name="description"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+      value="<%= project.description %>"
+    />
+  </div>
+  <a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
+  <button type="submit" class="btn btn-primary float-right">Submit</button>
+</form>
+
+<button id="delete" type="delete" class="btn btn-danger">DELETE</button>
+
+<script>
+  $(document).ready(function () {
+    $('#delete').click(function () {
+      var settings = {
+        url: 'http://localhost:3000/projects/612d50fdde76b1e3e80e3502',
+        method: 'DELETE',
+        timeout: 0,
+      };
+
+      $.ajax(settings).done(function (response) {
+        console.log('test');
+      });
+    });
+  });
+</script>
 <%-include('../partials/footer')%>

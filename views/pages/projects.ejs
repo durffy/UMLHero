@@ -2,12 +2,17 @@
 
 <h1><%= pageTitle %></h1>
 
-<ul class="list-group">
-  <% projectNames.forEach(function(project){%>
+<a type="submit" class="btn btn-primary" href="projects/create-project">Create Project</a>
 
-  <a class="list-group-item" href="projects/<%= project.name %>">
+<ul class="list-group">
+  <% projects.forEach(function(project){%>
+
+  <li class="list-group-item">
     <%= project.createdDate %>, <%= project.name %> , "<%= project.description %>"
-  </a>
+
+    <a href="/projects/<%= project._id %>" class="btn btn-primary pull-right" role="button">Edit</a>
+  </li>
+
   <%})%>
 </ul>
 
