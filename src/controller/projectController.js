@@ -28,6 +28,13 @@ class ProjectModel {
     return data;
   }
 
+  async updateById(request) {
+    const { name, description } = request.query;
+    const { id } = request.params;
+    const query = { name: name, description: description, lastUpdated: Date.now() };
+    let result = await Project.findOneAndUpdate({ _id: request.params.id }, query);
+  }
+
   async deleteById(params) {
     const { id } = params;
     await Project.findByIdAndDelete(id).exec();

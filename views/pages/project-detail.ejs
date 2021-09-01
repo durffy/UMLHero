@@ -2,7 +2,7 @@
 
 <h1>Project Details</h1>
 
-<form class="update-project" method="POST" action="/update-project">
+<form class="update-project" action="/update-project">
   <div class="input-group mb-3">
     <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
     <input
@@ -45,6 +45,7 @@
   <div class="input-group mb-3">
     <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
     <input
+      id="name"
       type="text"
       class="form-control"
       name="name"
@@ -57,6 +58,7 @@
   <div class="input-group mb-3">
     <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
     <input
+      id="description"
       type="text"
       class="form-control"
       name="description"
@@ -65,23 +67,38 @@
       value="<%= project.description %>"
     />
   </div>
-  <a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
-  <button type="submit" class="btn btn-primary float-right">Submit</button>
 </form>
 
 <button id="delete" type="delete" class="btn btn-danger">DELETE</button>
+<a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
+<button id="update" class="btn btn-primary float-right">Update</button>
 
 <script>
   $(document).ready(function () {
+    $('#update').click(function () {
+      var settings = {
+        url:
+          'http://localhost:3000/projects/<%= project.id %>?name=' +
+          $('#name').val() +
+          '&description=' +
+          $('#description').val(),
+        method: 'PUT',
+        timeout: 0,
+      };
+      $.ajax(settings).done(function (response) {
+        console.log(response);
+      });
+    });
+
     $('#delete').click(function () {
       var settings = {
-        url: 'http://localhost:3000/projects/612d50fdde76b1e3e80e3502',
+        url: 'http://localhost:3000/projects/<%= project.id %>',
         method: 'DELETE',
         timeout: 0,
       };
 
       $.ajax(settings).done(function (response) {
-        console.log('test');
+        console.log(response);
       });
     });
   });
