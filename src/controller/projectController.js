@@ -35,7 +35,6 @@ class ProjectModel {
     const options = { new: true };
     const update = { name: name, description: description, lastUpdated: Date.now() };
     let result = await this.Project.findByIdAndUpdate(query, { $set: update }, options);
-    console.log(result);
   }
 
   async deleteById(params) {
