@@ -45,8 +45,7 @@ module.exports = (params) => {
   // DELETE
   router.delete('/:id', async (request, response) => {
     await controller.deleteById(request.params);
-    console.log('deleted object');
-    return response.redirect('/projects');
+    return response.redirect(303, '/projects');
   });
 
   return router;

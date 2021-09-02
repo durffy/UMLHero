@@ -91,8 +91,8 @@
         url: 'http://localhost:3000/projects/<%= project.id %>',
         method: 'DELETE',
         timeout: 0,
-        success: function (data) {
-          window.location.replace(data);
+        success: function (result) {
+          window.location.replace('/projects');
         },
       };
 
