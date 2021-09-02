@@ -28,6 +28,14 @@ module.exports = (params) => {
     });
   });
 
+  router.get('/search', async (request, response) => {
+    const projects = await controller.search(request.query);
+    return response.render('pages/projects', {
+      pageTitle: 'Project List',
+      projects,
+    });
+  });
+
   router.get('/:id', async (request, response) => {
     const project = await controller.getById(request.params);
     response.render('pages/project-detail', {
