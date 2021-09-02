@@ -28,6 +28,15 @@ class ProjectModel {
     return data;
   }
 
+  async updateById(request) {
+    const { name, description } = request.body;
+    const { id } = request.params;
+    const query = { _id: request.params.id };
+    const options = { new: true };
+    const update = { name: name, description: description, lastUpdated: Date.now() };
+    let result = await this.Project.findByIdAndUpdate(query, { $set: update }, options);
+  }
+
   async deleteById(params) {
     const { id } = params;
     await Project.findByIdAndDelete(id).exec();
