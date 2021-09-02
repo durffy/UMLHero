@@ -12,11 +12,13 @@ class ProjectModel {
     this.Project = Project;
   }
 
+  // CREATE
   async addNewProject(params) {
     const newProject = new Project(params);
     newProject.save();
   }
 
+  // READ
   async getProjects() {
     const data = await this.Project.find().lean().exec();
     return data;
@@ -28,6 +30,16 @@ class ProjectModel {
     return data;
   }
 
+  async search(params) {
+    const query = params.search;
+    const regex = new RegExp(query, 'i');
+    const data = await Project.find({
+      $or: [{ name: { $regex: regex } }, { description: { $regex: regex } }],
+    });
+    return data;
+  }
+
+  // UPDATE
   async updateById(request) {
     const { name, description } = request.body;
     const { id } = request.params;
@@ -37,6 +49,7 @@ class ProjectModel {
     let result = await this.Project.findByIdAndUpdate(query, { $set: update }, options);
   }
 
+  // DELETE
   async deleteById(params) {
     const { id } = params;
     await Project.findByIdAndDelete(id).exec();
