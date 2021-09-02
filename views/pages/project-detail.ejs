@@ -2,72 +2,70 @@
 
 <h1>Project Details</h1>
 
-<form class="update-project" action="/update-project">
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
-    <input
-      type="text"
-      class="form-control"
-      name="id"
-      aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-default"
-      value="<%= project.id %>"
-      disabled
-    />
-  </div>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">ID</span>
+  <input
+    type="text"
+    class="form-control"
+    name="id"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.id %>"
+    disabled
+  />
+</div>
 
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Created Date</span>
-    <input
-      type="text"
-      class="form-control"
-      name="createdDate"
-      aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-default"
-      value="<%= project.createdDate %>"
-      disabled
-    />
-  </div>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Created Date</span>
+  <input
+    type="text"
+    class="form-control"
+    name="createdDate"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.createdDate %>"
+    disabled
+  />
+</div>
 
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Last Updated Date</span>
-    <input
-      type="text"
-      class="form-control"
-      name="lastUpdated"
-      aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-default"
-      value="<%= project.lastUpdated %>"
-      disabled
-    />
-  </div>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Last Updated Date</span>
+  <input
+    type="text"
+    class="form-control"
+    name="lastUpdated"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.lastUpdated %>"
+    disabled
+  />
+</div>
 
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
-    <input
-      id="name"
-      type="text"
-      class="form-control"
-      name="name"
-      aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-default"
-      value="<%= project.name %>"
-    />
-  </div>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Project Name</span>
+  <input
+    id="name"
+    type="text"
+    class="form-control"
+    name="name"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.name %>"
+  />
+</div>
 
-  <div class="input-group mb-3">
-    <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
-    <input
-      id="description"
-      type="text"
-      class="form-control"
-      name="description"
-      aria-label="Sizing example input"
-      aria-describedby="inputGroup-sizing-default"
-      value="<%= project.description %>"
-    />
-  </div>
-</form>
+<div class="input-group mb-3">
+  <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+  <input
+    id="description"
+    type="text"
+    class="form-control"
+    name="description"
+    aria-label="Sizing example input"
+    aria-describedby="inputGroup-sizing-default"
+    value="<%= project.description %>"
+  />
+</div>
 
 <button id="delete" type="delete" class="btn btn-danger">DELETE</button>
 <a type="cancel" class="btn btn-secondary" href="/projects">Cancel</a>
@@ -77,17 +75,15 @@
   $(document).ready(function () {
     $('#update').click(function () {
       var settings = {
-        url:
-          'http://localhost:3000/projects/<%= project.id %>?name=' +
-          $('#name').val() +
-          '&description=' +
-          $('#description').val(),
+        url: '/projects/<%= project.id %>',
         method: 'PUT',
-        timeout: 0,
+        dataType: 'html',
+        data: { name: $('#name').val(), description: $('#description').val() },
+        success: function (result) {
+          window.location.replace('/projects');
+        },
       };
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      });
+      $.ajax(settings);
     });
 
     $('#delete').click(function () {
@@ -95,11 +91,12 @@
         url: 'http://localhost:3000/projects/<%= project.id %>',
         method: 'DELETE',
         timeout: 0,
+        success: function (data) {
+          window.location.replace(data);
+        },
       };
 
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-      });
+      $.ajax(settings);
     });
   });
 </script>
