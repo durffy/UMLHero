@@ -1,10 +1,12 @@
 const express = require('express');
 const ProjectModel = require('../src/controller/projectController');
 const router = express.Router();
+const requirementsRoute = require('./requirements');
 const controller = new ProjectModel();
 
 module.exports = (params) => {
   const { projectService } = params;
+  router.use('/:id/requirements', requirementsRoute(params));
 
   // CREATE
 

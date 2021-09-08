@@ -6,11 +6,8 @@ module.exports = (params) => {
   const { requirementsService } = params;
 
   router.get('/', async (request, response) => {
-    const requirements = await requirementsService.getRequirements();
-
     return response.render('pages/requirements', {
       pageTitle: 'Requirements List',
-      requirements,
     });
   });
 
@@ -21,4 +18,6 @@ module.exports = (params) => {
 
     return response.redirect('projects');
   });
+
+  return router;
 };
