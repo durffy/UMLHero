@@ -11,8 +11,15 @@ module.exports = (params) => {
   });
 
   // READ
+
+  router.get('/create-requirement', async (request, response) => {
+    return response.render('pages/create-requirement', {
+      pageTitle: 'Create Requirement',
+      project: request.project,
+    });
+  });
+
   router.get('/', async (request, response) => {
-    console.log(request.project);
     return response.render('pages/requirements', {
       pageTitle: 'Requirements List',
       project: request.project,
