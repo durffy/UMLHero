@@ -1,8 +1,12 @@
 <%- include('../partials/header') %>
 
 <div>
-  <h1><%= pageTitle %></h1>
+  <h1><%= project.name %>: <%= pageTitle %></h1>
   <a type="submit" class="btn btn-primary" href="/create-requirement">Create Requirement</a>
 </div>
-
+<script>
+  $('.navbar-nav').append(
+    '<a class="nav-link active" aria-current="page" href="./">Project Details</a>'
+  );
+</script>
 <%- include('../partials/footer')%>
