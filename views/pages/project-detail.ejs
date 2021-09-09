@@ -72,6 +72,9 @@
 <button id="update" class="btn btn-primary float-right">Update</button>
 
 <script>
+  $('.navbar-nav').append(
+    '<a class="nav-link active" aria-current="page" href="./<%= project.id %>/requirements">Requirements</a>'
+  );
   $(document).ready(function () {
     $('#update').click(function () {
       var settings = {
