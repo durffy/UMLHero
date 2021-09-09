@@ -1,0 +1,30 @@
+<%- include('../partials/header') %>
+<h1><%= pageTitle %></h1>
+<form class="create-project" method="POST" action="./">
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">title</span>
+    <input
+      type="text"
+      class="form-control"
+      name="title"
+      placeholder="Suggested: Use NOUN-VERB"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+    />
+  </div>
+
+  <div class="input-group mb-3">
+    <span class="input-group-text" id="inputGroup-sizing-default">Description</span>
+    <input
+      type="text"
+      class="form-control"
+      name="description"
+      aria-label="Sizing example input"
+      aria-describedby="inputGroup-sizing-default"
+    />
+  </div>
+  <a type="cancel" class="btn btn-secondary" href="/">Cancel</a>
+  <button type="submit" class="btn btn-primary float-right">Submit</button>
+</form>
+
+<%- include('../partials/footer')%>
