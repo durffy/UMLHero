@@ -10,7 +10,6 @@ module.exports = (params) => {
   router.use(
     '/:id/requirements',
     async function (req, res, next) {
-      console.log(req.params);
       var project = await controller.getById(req.params);
       req.project = project;
       next();
