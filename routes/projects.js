@@ -1,3 +1,4 @@
+const { request } = require('express');
 const express = require('express');
 const ProjectModel = require('../src/controller/projectController');
 const router = express.Router();
@@ -6,7 +7,15 @@ const controller = new ProjectModel();
 
 module.exports = (params) => {
   const { projectService } = params;
-  router.use('/:id/requirements', requirementsRoute(params));
+  router.use(
+    '/:id/requirements',
+    async function (req, res, next) {
+      var project = await controller.getById(req.params);
+      req.project = project;
+      next();
+    },
+    requirementsRoute(params)
+  );
 
   // CREATE
 
@@ -38,7 +47,7 @@ module.exports = (params) => {
     });
   });
 
-  router.get('/:id', async (request, response) => {
+  router.get('/:id/', async (request, response) => {
     const project = await controller.getById(request.params);
     response.render('pages/project-detail', {
       pageTitle: request.params.name,
